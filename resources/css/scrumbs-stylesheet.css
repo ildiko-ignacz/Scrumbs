@@ -17,6 +17,18 @@ a {
     cursor: pointer;
 }
 
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 900;
+}
+
+input[type=text],
+input[type=password] {
+    box-sizing : border-box;
+}
+
 .primary-button {
     padding: 20px;
     background: linear-gradient(90deg, #6CB7FF 0%, #7985FF 100%);
@@ -34,9 +46,14 @@ a {
     display: inline-block;
 }
 
+.full-width-primary-button {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+}
+
 .primary-button:hover {
     transform: scale(1.05);
-    cursor: pointer;
     background: linear-gradient(90deg, #6E7BFF 0%, #6E7BFF 100%);
     box-shadow: 0 15px 15px -10px rgba(121,133,255,0.5);
 }
@@ -77,12 +94,14 @@ a {
     font-size: 18px;
     line-height: 33px;
     margin-top: 30px;
+    /*font-weight: 600;*/
 }
 
 .secondary-text {
     font-size: 14px;
     line-height: 28px;
     text-align: center;
+    /*font-weight: 600;*/
 }
 
 .link {
@@ -95,6 +114,8 @@ a {
     width: 100%;
     height: 110px;
 }
+
+
 
 #scrumbs-logo {
     width: 160px;
@@ -175,7 +196,7 @@ a {
 }
 
 .cover-image {
-    background: url(images/illustration.png) no-repeat top left;
+    background: url("../images/illustration.png") no-repeat top left;
     position: absolute;
     transform: translateY(-130px);
     height: 600px;
@@ -227,7 +248,7 @@ a {
 }
 
 .left-ui {
-    background: url(images/left-ui.svg) no-repeat right;
+    background: url("../images/left-ui.svg") no-repeat right;
     height: 650px;
 }
 
@@ -298,7 +319,7 @@ a {
 }
 
 .right-ui {
-    background: url("images/right-ui.svg") no-repeat left;
+    background: url("../images/right-ui.svg") no-repeat left;
     height: 840px;
 }
 
@@ -418,130 +439,185 @@ li:hover {
     height: 50px;
     background-color: #636185;
     display: inline-block;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .linked-in-btn {
     transition: all .2s ease-in-out;
-    background: url("images/linked-in.svg") center no-repeat;
+    background: url("../images/linked-in.svg") center no-repeat;
 }
 
 .linked-in-btn:hover {
-    background: url("images/linked-in-colored.svg") center no-repeat;
+    background: url("../images/linked-in-colored.svg") center no-repeat;
     cursor: pointer;
 }
 
 .twitter-btn {
     transition: all .2s ease-in-out;
-     background: url("images/twitter.svg") center no-repeat;
+     background: url("../images/twitter.svg") center no-repeat;
  }
 
 .twitter-btn:hover {
-    background: url("images/twitter-colored.svg") center no-repeat;
+    background: url("../images/twitter-colored.svg") center no-repeat;
     cursor: pointer;
 }
 
 .facebook-btn {
     transition: background-color .2s ease-in-out;
-    background: url("images/facebook.svg") center no-repeat;
+    background: url("../images/facebook.svg") center no-repeat;
 }
 
 .facebook-btn:hover {
-    background: url("images/facebook-colored.svg") center no-repeat;
+    background: url("../images/facebook-colored.svg") center no-repeat;
     cursor: pointer;
 }
 
-@media only screen and (max-width: 750px) {
 
-    .hamburger-icon {
-        display: inline-block;
-    }
+/* subscribe page style ------------------------------------------ */
 
-    #authentication-container {
-        display: none;
-    }
+#subscribe-container {
+    height: calc(100vh - 255px);
+    /*background: grey;*/
+}
 
-    #downloads-btn {
-        display: none;
-    }
+#subscribe-inner-container {
+    max-width: 1366px;
+    margin: auto;
+    /*background-color: #6E7BFF;*/
+}
 
-    #sign-in-option {
-        text-align: center;
-    }
+.subscribe-headline-container {
+    text-align: center;
+    max-width: 650px;
+    margin: auto;
+}
 
-    /*.main-title {*/
-        /*font-size: 31px;*/
-        /*line-height: 40px;*/
-    /*}*/
+.subscribe-description {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
 
-    /*.primary-text {*/
-        /*margin-top: 20px;*/
-        /*font-size: 15px;*/
-        /*line-height: 30px;*/
-    /*}*/
+.subscribe-form-container {
+    background: url("../images/bg-shape.svg") center no-repeat;
+    height: 642px;
+}
+
+.subscribe-card-bg {
+    width: 875px;
+    /*height: 560px;*/
+    height: auto;
+    background-color: #ffffff;
+    margin: auto;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 9px 15px 0px rgba(186,192,207,0.30);
+    -moz-box-shadow: 0px 9px 15px 0px rgba(186,192,207,0.30);
+    box-shadow: 0px 9px 15px 0px rgba(186,192,207,0.30);
+    transform: translateY(25px);
+    /*padding: 70px 0 70px 0;*/
+    box-sizing: border-box;
+    padding: 70px 30px 70px 30px;
+}
+
+.subscribe-for-alpha {
+    max-width: 425px;
+    height: auto;
+    /*background-color: #EAEBF1;*/
+    margin: auto;
+}
+
+.input-container {
+    margin-bottom: 25px;
+    display: inline-block;
+    width: 100%;
+}
+
+.input-basic-style-icon {
+    height: 60px;
+    border: 1px solid #E1E0E9;
+    border-radius: 5px;
+    padding-left: 60px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #242246;
+    width: 100%;
+}
+
+.input-basic-style-icon:focus {
+    border: 1px solid #7985FF;
+}
+
+#subscriber-name {
+    background: url("../images/user-icon.svg") 22px center no-repeat;
+}
+
+#subscriber-email {
+    background: url("../images/email-icon.svg") 18px center no-repeat;
+}
+
+.subscribe-info {
+    font-size: 12px;
+    color: #9B9AA9;
+    text-align: center;
+    margin: 10px 0 35px 0;
+    display: block;
+    line-height: 22px;
+}
+
+.subscribe-form-button {
+    margin-bottom: 20px;
+}
+
+
+@media only screen and (min-width: 1366px) {
 
     #above-the-fold {
+        /*background-color: #ff9555;*/
+        max-width: 1366px;
         padding-left: 0;
-        padding-top: 30px;
-        text-align: center;
-    }
-
-    .left-container {
-        width: 100%;
-        padding: 0 40px;
-    }
-
-    .right-container {
-        width: 100%;
-        position: relative;
-        transform: translateY(0);
-    }
-
-    .cover-image {
-        background: url(images/illustration.png) no-repeat top center;
-        margin-top: 70px;
-        background-size: 700px;
-        height: 440px;
-    }
-
-    #features {
-        padding: 60px 40px 100px 40px;
-    }
-
-    .feature-card {
-        width: 100%;
-        /*margin-bottom: 20px;*/
-        margin: 0 0 20px 0;
     }
 
     #section-1 {
-        /*height: auto;*/
-        text-align: center;
-        position: relative;
-        height: 860px;
+        max-width: 1366px;
+        /*background-color: #ffff99;*/
     }
 
     .left-ui {
-        background: url(images/left-ui.svg) no-repeat center;
-        background-size: 700px;
         position: absolute;
-        left: 0;
-        bottom: 0;
+        background: url("../images/left-ui.svg") no-repeat left;
     }
 
     .right-description {
-        max-width: 100%;
-        padding-top: 0;
+        float: right;
+        padding-left: 150px;
+        padding-right: 0;
     }
 
     #section-2 {
-        text-align: center;
+        max-width: 1366px;
+        margin: auto;
+        height: 875px;
+        /*background-color: #d3c774;*/
     }
 
     .right-ui {
-        background: url(images/right-ui.svg) no-repeat center;
-        background-size: 700px;
+        position: absolute;
     }
+}
+
+@media only screen and (max-width: 950px) {
+
+    .subscribe-form-container {
+        padding: 0 30px;
+    }
+
+    #subscribe-form-inner-container {
+        width: 100%;
+    }
+
+    .subscribe-headline-container {
+        padding: 0 50px;
+    }
+
 
     .bottom-footer {
         height: 200px;
@@ -575,41 +651,189 @@ li:hover {
         margin: -10px;
     }
 
+    #subscribe-container {
+        height: auto;
+        /*display: inline-block;*/
+    }
+
+    .subscribe-for-alpha {
+        width: 100%;
+    }
 }
 
-@media only screen and (min-width: 1366px) {
+
+@media only screen and (max-width: 750px) {
+
+    #navbar {
+        background-color: #ffffff;
+        width: 100%;
+        padding: 15px 25px;
+        height: auto;
+        overflow: auto;
+    }
+
+    #scrumbs-logo {
+        margin: 0;
+    }
+
+    .hamburger-icon {
+        display: inline-block;
+        top: 25px
+    }
+
+    #authentication-container {
+        display: none;
+    }
+
+    #downloads-btn {
+        display: none;
+    }
+
+    #sign-in-option {
+        text-align: center;
+    }
+
+    /*.main-title {*/
+    /*font-size: 31px;*/
+    /*line-height: 40px;*/
+    /*}*/
+
+    /*.primary-text {*/
+    /*margin-top: 20px;*/
+    /*font-size: 15px;*/
+    /*line-height: 30px;*/
+    /*}*/
 
     #above-the-fold {
-        /*background-color: #ff9555;*/
-        max-width: 1366px;
         padding-left: 0;
+        padding-top: 30px;
+        text-align: center;
+    }
+
+    .left-container {
+        width: 100%;
+        padding: 0 40px;
+    }
+
+    .right-container {
+        width: 100%;
+        position: relative;
+        transform: translateY(0);
+    }
+
+    .cover-image {
+        background: url("../images/illustration.png") no-repeat top center;
+        margin-top: 70px;
+        background-size: 700px;
+        height: 440px;
+    }
+
+    #features {
+        padding: 60px 40px 100px 40px;
+    }
+
+    .feature-card {
+        width: 100%;
+        /*margin-bottom: 20px;*/
+        margin: 0 0 20px 0;
     }
 
     #section-1 {
-        max-width: 1366px;
-        /*background-color: #ffff99;*/
+        /*height: auto;*/
+        text-align: center;
+        position: relative;
+        height: 860px;
     }
 
     .left-ui {
+        background: url("../images/left-ui.svg") no-repeat center;
+        background-size: 700px;
         position: absolute;
-        background: url(images/left-ui.svg) no-repeat left;
+        left: 0;
+        bottom: 0;
     }
 
     .right-description {
-        float: right;
-        padding-left: 150px;
-        padding-right: 0;
+        max-width: 100%;
+        padding-top: 0;
     }
 
     #section-2 {
-        max-width: 1366px;
-        margin: auto;
-        height: 875px;
-        /*background-color: #d3c774;*/
+        text-align: center;
     }
 
     .right-ui {
-        position: absolute;
+        background: url("../images/right-ui.svg") no-repeat center;
+        background-size: 700px;
+    }
+
+    /*.bottom-footer {*/
+    /*height: 200px;*/
+    /*position: relative;*/
+    /*line-height: normal;*/
+    /*margin-top: 40px;*/
+    /*}*/
+
+    /*.footer-navigation {*/
+    /*float: none;*/
+    /*display: block;*/
+    /*}*/
+
+    /*li {*/
+    /*margin: 0 30px;*/
+    /*}*/
+
+    /*.social-media-buttons-container {*/
+    /*float: none;*/
+    /*}*/
+
+    /*.source-company {*/
+    /*position: absolute;*/
+    /*bottom: 30px;*/
+    /*left: 0;*/
+    /*right: 0;*/
+    /*}*/
+
+    /*.planeeet-logo {*/
+    /*position: initial;*/
+    /*margin: -10px;*/
+    /*}*/
+
+    /*#subscribe-container {*/
+    /*height: auto;*/
+    /*display: inline-block;*/
+    /*}*/
+
+}
+
+@media only screen and (max-width: 650px) {
+
+
+    #subscribe-form-inner-container {
+        width: 100%;
+        /*padding: 70px 30px 0 30px;*/
     }
 }
+
+@media only screen and (max-width: 500px) {
+
+    .subscribe-card-bg {
+        padding: 30px 15px;
+    }
+
+    .subscribe-form-container {
+        padding: 0 10px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
 
