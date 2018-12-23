@@ -418,14 +418,26 @@ input[type=password] {
     margin-left: 50px;
 }
 
-li {
-    display: inline-block;
-    margin-right: 50px;
-    opacity: 0.7;
-    transition: all .2s ease-in-out;
+/*li {*/
+    /*display: inline-block;*/
+    /*margin-right: 50px;*/
+    /*opacity: 0.7;*/
+    /*transition: all .2s ease-in-out;*/
+/*}*/
+
+.footer-menu-item {
+display: inline-block;
+margin-right: 50px;
+opacity: 0.7;
+transition: all .2s ease-in-out;
 }
 
-li:hover {
+/*li:hover {*/
+    /*opacity: 1;*/
+/*}*/
+
+
+.footer-menu-item:hover {
     opacity: 1;
 }
 
@@ -569,6 +581,45 @@ li:hover {
 }
 
 
+/*mobile menu--------------------------------------------------------------------------*/
+
+#mobile-menu {
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    text-align: center;
+    padding-top: 50px;
+    box-sizing: border-box;
+    background-image: linear-gradient(0deg, #F6F6F9 48%, #FFFFFF 100%);
+    display: none;
+}
+
+/*background-image: linear-gradient(0deg, #F6F6F9 48%, #FFFFFF 100%);*/
+
+#close-mobile-menu-btn {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 50px;
+}
+
+#mobile-navigation {
+    margin-top: 60px;
+}
+
+.mobile-menu-item {
+    margin-bottom: 75px;
+}
+
+.close-menu-btn {
+    width: 25px;
+    height: 25px;
+}
+
+
+
+
 @media only screen and (min-width: 1366px) {
 
     #above-the-fold {
@@ -611,6 +662,8 @@ li:hover {
     .right-ui {
         position: absolute;
     }
+
+
 }
 
 @media only screen and (max-width: 1130px) {
@@ -621,6 +674,11 @@ li:hover {
     .download-btn-disabled {
         width: 44%;
     }
+
+    #footer-description {
+        width: 520px;
+    }
+
 }
 
 @media only screen and (max-width: 950px) {
@@ -669,11 +727,13 @@ li:hover {
     }
 
 
+
     .bottom-footer {
         height: 200px;
         position: relative;
         line-height: normal;
         margin-top: 40px;
+        padding: 0 60px;
     }
 
     .footer-navigation {
@@ -681,7 +741,7 @@ li:hover {
         display: block;
     }
 
-    li {
+    .footer-menu-item {
         margin: 0 30px;
     }
 
@@ -819,12 +879,17 @@ li:hover {
         background-size: 700px;
     }
 
-    /*.bottom-footer {*/
+    .top-footer {
     /*height: 200px;*/
-    /*position: relative;*/
-    /*line-height: normal;*/
-    /*margin-top: 40px;*/
-    /*}*/
+    position: relative;
+    line-height: normal;
+    padding: 130px 40px;
+    height: auto;
+    }
+
+    .footer-description {
+        width: 100%;
+    }
 
     /*.footer-navigation {*/
     /*float: none;*/
@@ -877,6 +942,14 @@ li:hover {
         padding: 0 10px;
     }
 
+    .download-btn {
+        width: 80%;
+    }
+
+    .download-btn-disabled {
+        width: 80%;
+    }
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -885,7 +958,12 @@ li:hover {
         height: 900px;
     }
 
+    #footer-description {
+        width: 100%;
+    }
+
 }
+
 
 @media only screen and (max-width: 450px) {
 
