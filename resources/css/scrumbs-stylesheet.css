@@ -197,7 +197,7 @@ input[type=password] {
 
 .cover-image {
     background: url("../images/illustration.png") no-repeat top left;
-    position: absolute;
+    /*position: absolute;*/
     transform: translateY(-130px);
     height: 600px;
 }
@@ -208,8 +208,9 @@ input[type=password] {
     max-width: 1366px;
     margin: auto;
     height: auto;
-    padding: 140px 60px 190px 60px;
+    /*padding: 140px 60px 190px 60px;*/
     /*background-color: #636185;*/
+    padding: 0 40px 100px 40px;
     overflow: hidden;
     justify-content: space-between;
 }
@@ -576,6 +577,14 @@ li:hover {
         padding-left: 0;
     }
 
+    .cover-image {
+        position: absolute;
+    }
+
+    #features {
+        padding: 140px 60px 190px 60px;
+    }
+
     #section-1 {
         max-width: 1366px;
         /*background-color: #ffff99;*/
@@ -604,15 +613,48 @@ li:hover {
     }
 }
 
+@media only screen and (max-width: 1130px) {
+    .download-btn {
+        width: 44%;
+    }
+
+    .download-btn-disabled {
+        width: 44%;
+    }
+}
+
 @media only screen and (max-width: 950px) {
 
+    #above-the-fold {
+        padding-left: 40px;
+        padding-top: 50px;
+    }
+
     .left-container {
-        width: 70%;
+        /*width: 70%;*/
     }
 
     .right-container {
-        width: 30%;
+        /*width: 30%;*/
     }
+
+    .cover-image {
+        transform: translateY(0);
+    }
+
+    #features {
+        padding: 50px 40px 50px 40px;
+    }
+
+    .feature-card {
+        width: 48%;
+    }
+
+    .left-description {
+        padding-left: 40px;
+    }
+
+
 
     .subscribe-form-container {
         padding: 0 30px;
@@ -738,7 +780,8 @@ li:hover {
     }
 
     #features {
-        padding: 60px 40px 100px 40px;
+        /*padding: 60px 40px 100px 40px;*/
+
     }
 
     .feature-card {
