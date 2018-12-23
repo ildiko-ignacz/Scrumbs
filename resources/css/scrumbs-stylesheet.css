@@ -606,6 +606,14 @@ li:hover {
 
 @media only screen and (max-width: 950px) {
 
+    .left-container {
+        width: 70%;
+    }
+
+    .right-container {
+        width: 30%;
+    }
+
     .subscribe-form-container {
         padding: 0 30px;
     }
@@ -641,7 +649,7 @@ li:hover {
 
     .source-company {
         position: absolute;
-        bottom: 30px;
+        bottom: 40px;
         left: 0;
         right: 0;
     }
@@ -670,6 +678,7 @@ li:hover {
         padding: 15px 25px;
         height: auto;
         overflow: auto;
+        box-sizing: border-box;
     }
 
     #scrumbs-logo {
@@ -824,6 +833,84 @@ li:hover {
     .subscribe-form-container {
         padding: 0 10px;
     }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    #section-1 {
+        height: 900px;
+    }
+
+}
+
+@media only screen and (max-width: 450px) {
+
+    #above-the-fold {
+        padding-top: 15px;
+    }
+
+    .cover-image {
+        background: url("../images/illustration_mobile.png") no-repeat center;
+        background-size: 490px;
+        margin-top: -35px;
+    }
+
+    .main-title {
+        font-size: 26px;
+        line-height: 36px;
+    }
+
+    .primary-text {
+        font-size: 16px;
+        line-height: 32px;
+    }
+
+    #features {
+        padding: 0 20px 50px 20px;
+    }
+
+    #section-1 {
+        height: 730px;
+    }
+
+    .right-description {
+        padding: 0 40px;
+    }
+
+    .left-ui {
+        background-size: 490px;
+        height: 430px;
+    }
+
+    .right-ui {
+        background-size: 460px;
+        height: 550px;
+    }
+
+    #section-2 {
+        margin-top: 50px;
+    }
+
+    .top-footer {
+        padding: 80px 40px;
+    }
+
+    #footer-description {
+        width: 100%;
+    }
+
+    .info-text {
+        margin-top: 20px;
+    }
+
+    .bottom-footer {
+        padding: 0 20px;
+    }
+
+    /*.source-company {*/
+        /*bottom: 40px;*/
+    /*}*/
 
 }
 
