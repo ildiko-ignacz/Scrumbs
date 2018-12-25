@@ -5,8 +5,7 @@
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-weight: 500;
-    color: #636185;
+    /*font-weight: 500;*/
 }
 
 body {
@@ -21,7 +20,7 @@ label {
     display: block;
     margin-bottom: 10px;
     font-size: 14px;
-    font-weight: 900;
+    /*font-weight: 900;*/
 }
 
 input[type=text],
@@ -56,6 +55,15 @@ input[type=password] {
     transform: scale(1.05);
     background: linear-gradient(90deg, #6E7BFF 0%, #6E7BFF 100%);
     box-shadow: 0 15px 15px -10px rgba(121,133,255,0.5);
+}
+
+#navbar {
+    background-color: #ffffff;
+    width: 100%;
+    height: 110px;
+    color: #636185;
+    display: block;
+    position: relative;
 }
 
 .navbar-button-style {
@@ -109,14 +117,6 @@ input[type=password] {
     text-decoration: underline;
 }
 
-#navbar {
-    background-color: #ffffff;
-    width: 100%;
-    height: 110px;
-}
-
-
-
 #scrumbs-logo {
     width: 160px;
     margin: 25px 0 30px 30px;
@@ -147,6 +147,7 @@ input[type=password] {
     float: right;
     margin-right: 33px;
     margin-top: 28px;
+    color: #ffffff;
 }
 
 .hamburger-icon {
@@ -166,6 +167,7 @@ input[type=password] {
     overflow: auto;
     width: 100%;
     box-sizing: border-box;
+    color: #636185;
 }
 
 #get-started-btn-above-the-fold {
@@ -213,6 +215,7 @@ input[type=password] {
     padding: 0 40px 100px 40px;
     overflow: hidden;
     justify-content: space-between;
+    color: #636185;
 }
 
 .feature-card {
@@ -246,6 +249,7 @@ input[type=password] {
     height: 730px;
     overflow: auto;
     margin: auto;
+    color: #636185;
 }
 
 .left-ui {
@@ -265,6 +269,7 @@ input[type=password] {
     width: 100%;
     height: auto;
     overflow: hidden;
+    color: #636185;
 }
 
 .left-description {
@@ -292,11 +297,14 @@ input[type=password] {
     display: inline-block;
     font-weight: bold;
     border-radius: 5px;
+    transition: all 0.2s ease-in-out;
 }
 
 .download-btn:hover {
-    outline: 2px solid #7985FF;
+    /*outline: 2px solid #7985FF;*/
+    transform: scale(1.05);
     cursor: pointer;
+    /*box-shadow: 0 15px 15px -10px rgba(121,133,255,0.5);*/
 }
 
 .download-btn-disabled {
@@ -489,7 +497,7 @@ transition: all .2s ease-in-out;
 /* subscribe page style ------------------------------------------ */
 
 #subscribe-container {
-    height: calc(100vh - 255px);
+    height: auto;
     /*background: grey;*/
 }
 
@@ -512,7 +520,8 @@ transition: all .2s ease-in-out;
 
 .subscribe-form-container {
     background: url("../images/bg-shape.svg") center no-repeat;
-    height: 642px;
+    height: 650px;
+    background-size: 971px;
 }
 
 .subscribe-card-bg {
@@ -578,6 +587,13 @@ transition: all .2s ease-in-out;
 
 .subscribe-form-button {
     margin-bottom: 20px;
+}
+
+.input-error-message {
+    color: #D00262;
+    font-size: 12px;
+    margin-top: 10px;
+    opacity: 0;
 }
 
 
@@ -962,6 +978,16 @@ transition: all .2s ease-in-out;
         width: 100%;
     }
 
+
+    .subscribe-form-container {
+        background-size: 880px;
+        height: 600px;
+    }
+
+    .subscribe-info {
+        padding: 0 70px;
+    }
+
 }
 
 
@@ -1029,9 +1055,10 @@ transition: all .2s ease-in-out;
         padding: 0 20px;
     }
 
-    /*.source-company {*/
-        /*bottom: 40px;*/
-    /*}*/
+    .subscribe-info {
+        padding: 0 40px;
+    }
+
 
 }
 
