@@ -66,6 +66,11 @@ input[type=password] {
     position: relative;
 }
 
+#subscribe-navbar {
+    height: 110px;
+    overflow: auto;
+}
+
 .navbar-button-style {
     font-size: 14px;
     font-weight: 500;
@@ -115,6 +120,11 @@ input[type=password] {
 .link {
     color: #7985FF;
     text-decoration: underline;
+}
+
+.subscribe-navbar-logo {
+    width: 160px;
+    margin: 25px 0 30px 30px;
 }
 
 #scrumbs-logo {
@@ -728,8 +738,6 @@ transition: all .2s ease-in-out;
         padding-left: 40px;
     }
 
-
-
     .subscribe-form-container {
         padding: 0 30px;
     }
@@ -742,7 +750,10 @@ transition: all .2s ease-in-out;
         padding: 0 50px;
     }
 
-
+    .subscribe-navbar-logo {
+        display: block;
+        margin: 25px auto 30px auto;
+    }
 
     .bottom-footer {
         height: 200px;
@@ -777,10 +788,11 @@ transition: all .2s ease-in-out;
         margin: -10px;
     }
 
-    #subscribe-container {
-        height: auto;
-        /*display: inline-block;*/
-    }
+    /*#subscribe-container {*/
+        /*height: auto;*/
+        /*overflow: hidden;*/
+        /*!*display: inline-block;*!*/
+    /*}*/
 
     .subscribe-for-alpha {
         width: 100%;
@@ -948,26 +960,6 @@ transition: all .2s ease-in-out;
     }
 }
 
-@media only screen and (max-width: 500px) {
-
-    .subscribe-card-bg {
-        padding: 30px 15px;
-    }
-
-    .subscribe-form-container {
-        padding: 0 10px;
-    }
-
-    .download-btn {
-        width: 80%;
-    }
-
-    .download-btn-disabled {
-        width: 80%;
-    }
-
-}
-
 @media only screen and (max-width: 600px) {
 
     #section-1 {
@@ -981,11 +973,37 @@ transition: all .2s ease-in-out;
 
     .subscribe-form-container {
         background-size: 880px;
-        height: 600px;
+        height: 675px;
     }
 
     .subscribe-info {
         padding: 0 70px;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+
+    .subscribe-card-bg {
+        padding: 30px 15px;
+    }
+
+    .subscribe-form-container {
+        padding: 0 10px;
+        height: 610px;
+    }
+
+    /*.subscribe-form-container {*/
+        /*background-size: 880px;*/
+        /*height: 590px;*/
+    /*}*/
+
+    .download-btn {
+        width: 80%;
+    }
+
+    .download-btn-disabled {
+        width: 80%;
     }
 
 }
@@ -1059,6 +1077,24 @@ transition: all .2s ease-in-out;
         padding: 0 40px;
     }
 
+
+}
+
+@media only screen and (max-width: 400px) {
+
+    .bottom-footer {
+        height: 230px;
+    }
+
+    .footer-menu-item {
+        display: block;
+        text-decoration: none;
+        margin-bottom: 30px;
+    }
+
+    .social-btn {
+        margin-top: 0;
+    }
 
 }
 
