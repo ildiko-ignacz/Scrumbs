@@ -507,7 +507,8 @@ transition: all .2s ease-in-out;
 /* subscribe page style ------------------------------------------ */
 
 #subscribe-container {
-    height: auto;
+    height: calc(100vh - 246px);
+    min-height: 800px;
     /*background: grey;*/
 }
 
