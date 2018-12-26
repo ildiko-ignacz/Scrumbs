@@ -690,6 +690,10 @@ transition: all .2s ease-in-out;
     height: 25px;
 }
 
+.list-item-indent {
+    text-indent: 15px;
+}
+
 
 
 
