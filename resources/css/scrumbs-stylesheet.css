@@ -343,7 +343,6 @@ input[type=password] {
 }
 
 #footer {
-    background-color: #ffffff;
     width: 100%;
     height: auto;
     color: #ffffff;
@@ -406,6 +405,7 @@ input[type=password] {
     text-align: center;
     color: #9B9AA9;
     font-size: 14px;
+    background-color: #ffffff;
 }
 
 .footer-navigation {
@@ -430,6 +430,7 @@ input[type=password] {
 .social-media-buttons-container {
     display: inline-block;
     float: right;
+    height: 100px;
 }
 
 .social-media-buttons-container img {
@@ -636,6 +637,20 @@ transition: all .2s ease-in-out;
     margin: 40px auto 0 auto;
     display: block;
     max-width: 280px;
+}
+
+/*terms ------------------------------------------------------------------------------*/
+
+.terms-container {
+    padding: 40px 50px;
+    max-width: 1000px;
+    background-color: #ffffff;
+    margin: 0 auto 30px auto;
+}
+
+.terms-scrumbs-logo {
+    width: 160px;
+    margin-bottom: 40px;
 }
 
 
