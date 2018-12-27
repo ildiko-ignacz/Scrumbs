@@ -691,7 +691,11 @@ transition: all .2s ease-in-out;
 }
 
 .list-item-indent {
-    text-indent: 15px;
+    padding-left: 15px;
+}
+
+.margin-top-30 {
+    margin-top: 30px;
 }
 
 
