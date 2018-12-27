@@ -814,8 +814,11 @@ transition: all .2s ease-in-out;
         height: 200px;
         position: relative;
         line-height: normal;
+        padding: 40px 20px 0 20px;
+    }
+
+    .bottom-footer-mobile-margin {
         margin-top: 40px;
-        padding: 0 60px;
     }
 
     .footer-navigation {
@@ -1122,7 +1125,7 @@ transition: all .2s ease-in-out;
     }
 
     .bottom-footer {
-        padding: 0 20px;
+        padding: 40px 20px 0 20px;
     }
 
     .subscribe-info {
