@@ -508,7 +508,7 @@ transition: all .2s ease-in-out;
 /* subscribe page style ------------------------------------------ */
 
 #subscribe-container {
-    height: calc(100vh - 246px);
+    height: calc(100vh - 215px);
     min-height: 860px;
     /*background: grey;*/
     /*display: none;*/
@@ -627,7 +627,7 @@ transition: all .2s ease-in-out;
     /*height: auto;*/
     margin: auto;
     text-align: center;
-    height: calc(100vh - 246px);
+    height: calc(100vh - 215px);
     min-height: 860px;
     padding: 200px 60px 0 60px;
     box-sizing: border-box;
