@@ -28,6 +28,10 @@ input[type=password] {
     box-sizing : border-box;
 }
 
+ul {
+    list-style: none;
+}
+
 .primary-button {
     padding: 20px;
     background: linear-gradient(90deg, #6CB7FF 0%, #7985FF 100%);
@@ -658,14 +662,15 @@ transition: all .2s ease-in-out;
 
 #mobile-menu {
     height: 100vh;
-    position: absolute;
+    /*position: absolute;*/
     width: 100%;
+    position: fixed;
     z-index: 2;
     text-align: center;
     padding-top: 50px;
     box-sizing: border-box;
     background-image: linear-gradient(0deg, #F6F6F9 48%, #FFFFFF 100%);
-    display: none;
+    /*display: none;*/
 }
 
 /*background-image: linear-gradient(0deg, #F6F6F9 48%, #FFFFFF 100%);*/
@@ -970,36 +975,6 @@ transition: all .2s ease-in-out;
         width: 100%;
     }
 
-    /*.footer-navigation {*/
-    /*float: none;*/
-    /*display: block;*/
-    /*}*/
-
-    /*li {*/
-    /*margin: 0 30px;*/
-    /*}*/
-
-    /*.social-media-buttons-container {*/
-    /*float: none;*/
-    /*}*/
-
-    /*.source-company {*/
-    /*position: absolute;*/
-    /*bottom: 30px;*/
-    /*left: 0;*/
-    /*right: 0;*/
-    /*}*/
-
-    /*.planeeet-logo {*/
-    /*position: initial;*/
-    /*margin: -10px;*/
-    /*}*/
-
-    /*#subscribe-container {*/
-    /*height: auto;*/
-    /*display: inline-block;*/
-    /*}*/
-
 }
 
 @media only screen and (max-width: 650px) {
@@ -1043,11 +1018,6 @@ transition: all .2s ease-in-out;
         padding: 0 10px;
         height: 610px;
     }
-
-    /*.subscribe-form-container {*/
-        /*background-size: 880px;*/
-        /*height: 590px;*/
-    /*}*/
 
     .download-btn {
         width: 80%;
@@ -1162,6 +1132,42 @@ transition: all .2s ease-in-out;
         min-height: 250px;
         height: calc(100vh - 280px);
         display: inline-block;
+    }
+
+}
+
+@media only screen and (min-height: 1024px) {
+
+    #mobile-menu {
+        background-color: #636185;
+    }
+
+}
+
+@media only screen and (max-height: 610px) {
+
+    .mobile-menu-item {
+        margin-bottom: 45px;
+    }
+
+}
+
+
+@media only screen and (max-height: 505px) {
+
+    #close-mobile-menu-btn {
+        right: 50px;
+        left: initial;
+    }
+
+}
+
+@media only screen and (max-height: 480px) {
+
+    #close-mobile-menu-btn {
+        right: 25px;
+        bottom: 25px;
+        left: initial;
     }
 
 }
