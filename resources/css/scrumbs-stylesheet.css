@@ -670,7 +670,7 @@ transition: all .2s ease-in-out;
     padding-top: 50px;
     box-sizing: border-box;
     background-image: linear-gradient(0deg, #F6F6F9 48%, #FFFFFF 100%);
-    /*display: none;*/
+    display: none;
 }
 
 /*background-image: linear-gradient(0deg, #F6F6F9 48%, #FFFFFF 100%);*/
