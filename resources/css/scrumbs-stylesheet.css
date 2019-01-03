@@ -541,7 +541,7 @@ transition: all .2s ease-in-out;
     background-size: 971px;
 }
 
-.subscribe-card-bg {
+.card-bg {
     width: 875px;
     /*height: 560px;*/
     height: auto;
@@ -702,6 +702,78 @@ transition: all .2s ease-in-out;
 .margin-top-30 {
     margin-top: 30px;
 }
+
+/*downloads------------------------------------------------------------------------*/
+
+#downloads-section {
+    height: 1040px;
+}
+
+.downloads-headline {
+    text-align: center;
+    line-height: 50px;
+    width: 600px;
+    margin: 60px auto 0 auto;
+}
+
+#downloads-card {
+    padding: 50px 30px 50px 50px;
+    width: 1010px;
+    background-image: linear-gradient(90deg, #FFFFFF 0%, #F8F8FA 56%);
+}
+
+.app-thumbnail {
+    display: inline-block;
+}
+
+.app-details {
+    display: inline-block;
+    margin-left: 40px;
+
+}
+
+.app-details .secondary-title {
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.app-details .secondary-text {
+    margin-top: 0;
+    text-align: left;
+    color: #636185;
+}
+
+.device-type {
+    height: auto;
+    /*background-color: #EAEBF1;*/
+    padding: 30px 0;
+}
+
+#android-app {
+    color: #9B9AA9;
+}
+
+.tertiary-button {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #636185;
+    float: right;
+    padding: 20px 20px 20px 40px;
+    text-align: right;
+    border-radius: 5px;
+    /*background-color: #cccccc;*/
+    background: url("../images/download-icon-white.svg") 15px 3px no-repeat;
+    transition: all ease-out 0.3s;
+    cursor: pointer;
+}
+
+.tertiary-button:hover {
+    background: url("../images/download-icon.svg") 15px center no-repeat;
+    font-weight: bold;
+    background-color: #ffffff;
+    box-shadow: 0 15px 15px -10px rgba(99,97,133,0.3);
+}
+
 
 
 
@@ -1010,7 +1082,7 @@ transition: all .2s ease-in-out;
 
 @media only screen and (max-width: 500px) {
 
-    .subscribe-card-bg {
+    .card-bg {
         padding: 30px 15px;
     }
 
