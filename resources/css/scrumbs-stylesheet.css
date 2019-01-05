@@ -102,9 +102,20 @@ ul {
 .secondary-title {
     font-size: 26px;
     font-weight: bold;
+    line-height: 35px;
     color: #242246;
     margin-bottom: 15px;
     text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
+.secondary-title-disabled {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: center;
+    color: #9B9AA9;
+    line-height: 35px;
 }
 
 .primary-text {
@@ -119,6 +130,12 @@ ul {
     line-height: 28px;
     text-align: center;
     /*font-weight: 600;*/
+}
+
+.secondary-text-disabled {
+    font-size: 14px;
+    line-height: 28px;
+    color: #9B9AA9;
 }
 
 .link {
@@ -705,8 +722,13 @@ transition: all .2s ease-in-out;
 
 /*downloads------------------------------------------------------------------------*/
 
+#downloads-container {
+    max-width: 1010px;
+    margin: auto;
+}
+
 #downloads-section {
-    height: 1040px;
+    height: 1000px;
 }
 
 .downloads-headline {
@@ -718,7 +740,7 @@ transition: all .2s ease-in-out;
 
 #downloads-card {
     padding: 50px 30px 50px 50px;
-    width: 1010px;
+    width: 100%;
     background-image: linear-gradient(90deg, #FFFFFF 0%, #F8F8FA 56%);
 }
 
@@ -765,6 +787,19 @@ transition: all .2s ease-in-out;
     background: url("../images/download-icon-white.svg") 15px 3px no-repeat;
     transition: all ease-out 0.3s;
     cursor: pointer;
+    line-height: 20px;
+}
+
+.tertiary-button-disabled {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #9B9AA9;
+    float: right;
+    padding: 20px 20px 20px 40px;
+    text-align: right;
+    border-radius: 5px;
+    font-weight: bold;
+    line-height: 20px;
 }
 
 .tertiary-button:hover {
@@ -772,6 +807,10 @@ transition: all .2s ease-in-out;
     font-weight: bold;
     background-color: #ffffff;
     box-shadow: 0 15px 15px -10px rgba(99,97,133,0.3);
+}
+
+#get-started-downloads {
+    float: right;
 }
 
 
@@ -835,6 +874,10 @@ transition: all .2s ease-in-out;
 
     #footer-description {
         width: 520px;
+    }
+
+    #downloads-container {
+        padding: 0 30px;
     }
 
 }
@@ -1046,6 +1089,51 @@ transition: all .2s ease-in-out;
     .footer-description {
         width: 100%;
     }
+
+    #downloads-section {
+        height: 1750px;
+    }
+
+    .downloads-headline {
+        width: 100%;
+        padding: 0 30px;
+        box-sizing: border-box;
+    }
+
+    #downloads-card {
+        padding: 50px;
+    }
+
+    .app-thumbnail, .app-details{
+        display: block;
+        margin: auto;
+    }
+
+    .app-details .secondary-title, .secondary-title-disabled {
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .app-details .secondary-text {
+        text-align: center;
+    }
+
+    .app-details .secondary-text-disabled {
+        text-align: center;
+    }
+
+    .tertiary-button, .tertiary-button-disabled, #get-started-downloads {
+        float: none;
+        display: inline-block;
+        margin: auto;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    /*.app-details {*/
+        /*display: block;*/
+        /*margin: auto;*/
+    /*}*/
 
 }
 
