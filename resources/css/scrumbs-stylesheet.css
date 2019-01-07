@@ -115,11 +115,12 @@ ul {
 .secondary-title {
     font-size: 26px;
     font-weight: bold;
-    line-height: 35px;
+    /*line-height: 35px;*/
     color: #242246;
     margin-bottom: 15px;
     text-align: center;
     font-family: 'Lato', sans-serif;
+    line-height: 50px;
 }
 
 .secondary-title-disabled {
@@ -129,6 +130,7 @@ ul {
     text-align: center;
     color: #9B9AA9;
     line-height: 35px;
+    font-family: 'Lato', sans-serif;
 }
 
 .primary-text {
@@ -737,13 +739,14 @@ transition: all .2s ease-in-out;
 /*downloads------------------------------------------------------------------------*/
 
 #downloads-container {
-    max-width: 1010px;
+    /*max-width: 1010px;*/
     margin: auto;
+    max-width: 1030px;
 }
 
 #downloads-section {
-    height: calc(100vh - 290px);
-    min-height: 900px;
+    padding-bottom: 200px;
+    background: url(../images/downloads-bubble.svg) center 80px no-repeat;
 }
 
 .downloads-headline {
@@ -772,6 +775,7 @@ transition: all .2s ease-in-out;
 .app-details .secondary-title {
     margin-bottom: 5px;
     text-align: left;
+    line-height: 20px;
 }
 
 .app-details .secondary-text {
@@ -783,7 +787,7 @@ transition: all .2s ease-in-out;
 .device-type {
     height: auto;
     /*background-color: #EAEBF1;*/
-    padding: 30px 0;
+    padding: 20px 0 20px 0;
 }
 
 #android-app {
@@ -794,7 +798,7 @@ transition: all .2s ease-in-out;
     text-transform: uppercase;
     font-size: 14px;
     color: #636185;
-    float: right;
+    /*float: right;*/
     padding: 20px 20px 20px 40px;
     text-align: right;
     border-radius: 5px;
@@ -809,7 +813,7 @@ transition: all .2s ease-in-out;
     text-transform: uppercase;
     font-size: 14px;
     color: #9B9AA9;
-    float: right;
+    /*float: right;*/
     padding: 20px 20px 20px 40px;
     text-align: right;
     border-radius: 5px;
@@ -824,9 +828,14 @@ transition: all .2s ease-in-out;
     box-shadow: 0 15px 15px -10px rgba(99,97,133,0.3);
 }
 
-#get-started-downloads {
+/*#get-started-downloads {*/
+    /*float: right;*/
+/*}*/
+
+.button-container {
     float: right;
 }
+
 
 
 
@@ -1106,7 +1115,8 @@ transition: all .2s ease-in-out;
     }
 
     #downloads-section {
-        height: 1750px;
+        padding-bottom: 90px;
+        background: initial;
     }
 
     .downloads-headline {
@@ -1119,6 +1129,10 @@ transition: all .2s ease-in-out;
         padding: 50px;
     }
 
+    .app-thumbnail {
+        height: 60px;
+    }
+
     .app-thumbnail, .app-details{
         display: block;
         margin: auto;
@@ -1126,7 +1140,8 @@ transition: all .2s ease-in-out;
 
     .app-details .secondary-title, .secondary-title-disabled {
         text-align: center;
-        margin-top: 50px;
+        /*margin-top: 50px;*/
+        margin: 50px 0 20px 0;
     }
 
     .app-details .secondary-text {
@@ -1149,6 +1164,11 @@ transition: all .2s ease-in-out;
         /*display: block;*/
         /*margin: auto;*/
     /*}*/
+
+    .button-container {
+        text-align: center;
+        float: none;
+    }
 
 }
 
