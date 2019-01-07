@@ -1142,6 +1142,7 @@ transition: all .2s ease-in-out;
         text-align: center;
         /*margin-top: 50px;*/
         margin: 50px 0 20px 0;
+        line-height: 35px;
     }
 
     .app-details .secondary-text {
@@ -1164,6 +1165,13 @@ transition: all .2s ease-in-out;
         /*display: block;*/
         /*margin: auto;*/
     /*}*/
+
+    .tertiary-button {
+        background: url("../images/download-icon.svg") 15px center no-repeat;
+        font-weight: bold;
+        background-color: #ffffff;
+        box-shadow: 0 15px 15px -10px rgba(99,97,133,0.3);
+    }
 
     .button-container {
         text-align: center;
@@ -1302,6 +1310,10 @@ transition: all .2s ease-in-out;
         box-sizing: border-box;
         min-height: 300px;
         height: calc(100vh - 350px);
+    }
+
+    #downloads-container {
+        padding: 0 15px;
     }
 
 
