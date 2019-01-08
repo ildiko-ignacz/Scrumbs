@@ -10,6 +10,7 @@
 
 body {
     background: linear-gradient(0deg, #F6F6F9 0%, #FFFFFF 100%);
+
 }
 
 a {
@@ -678,6 +679,64 @@ transition: all .2s ease-in-out;
     max-width: 280px;
 }
 
+/*unsubscribed page style --------------------------------------------------------------*/
+
+#unsubscribed-container {
+    max-width: 700px;
+    height: auto;
+    margin-top: 110px;
+    padding: 50px 50px;
+}
+
+#unsubscribed-container .subscribe-navbar-logo {
+    margin: 0 auto 40px auto;
+    text-align: center;
+    display: block;
+}
+
+#unsubscribed-container .button-container {
+    text-align: center;
+    float: none;
+    margin-top: 40px;
+}
+
+#unsubscribed-container .button-container .primary-button {
+    padding: 20px 80px;
+}
+
+.unsubscribe-footer {
+    position: relative;
+    line-height: normal;
+    padding: 40px 20px 0 20px;
+    text-align: center;
+}
+
+#unsubscribed-container .footer-navigation {
+    float: none;
+    color: #9B9AA9;
+    font-size: 14px;
+}
+
+#unsubscribed-container .footer-menu-item {
+    margin: 0 25px;
+}
+
+#unsubscribed-container .source-company {
+    position: initial;
+    display: block;
+    margin-bottom: 50px;
+    color: #9B9AA9;
+    font-size: 14px;
+}
+
+#unsubscribed-container .planeeet-logo {
+    position: initial;
+    margin-bottom: -10px;
+}
+
+
+
+
 /*terms ------------------------------------------------------------------------------*/
 
 .terms-container {
@@ -831,9 +890,6 @@ transition: all .2s ease-in-out;
     box-shadow: 0 15px 15px -10px rgba(99,97,133,0.3);
 }
 
-/*#get-started-downloads {*/
-    /*float: right;*/
-/*}*/
 
 .button-container {
     float: right;
