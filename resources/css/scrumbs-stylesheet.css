@@ -53,6 +53,7 @@ ul {
     -o-transition: transform .2s ease-in-out;
     transition: transform .2s ease-in-out;
     display: inline-block;
+    cursor: pointer;
 }
 
 .full-width-primary-button {
@@ -127,8 +128,9 @@ ul {
     font-size: 26px;
     font-weight: bold;
     margin-bottom: 5px;
-    text-align: center;
+    /*text-align: center;*/
     color: #9B9AA9;
+    text-align: left;
     line-height: 35px;
     font-family: 'Lato', sans-serif;
 }
