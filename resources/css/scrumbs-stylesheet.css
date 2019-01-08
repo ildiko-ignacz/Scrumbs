@@ -836,6 +836,26 @@ transition: all .2s ease-in-out;
     float: right;
 }
 
+.top-image {
+    position: absolute;
+    top: 100px;
+    width: 90%;
+    display: none;
+    z-index: -1;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.bottom-image {
+    position: absolute;
+    bottom: 20px;
+    width: 90%;
+    display: none;
+    z-index: -1;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+
 
 
 
@@ -1117,6 +1137,7 @@ transition: all .2s ease-in-out;
     #downloads-section {
         padding-bottom: 90px;
         background: initial;
+        position: relative;
     }
 
     .downloads-headline {
@@ -1176,6 +1197,10 @@ transition: all .2s ease-in-out;
     .button-container {
         text-align: center;
         float: none;
+    }
+
+    .top-image, .bottom-image {
+        display: initial;
     }
 
 }
@@ -1314,6 +1339,10 @@ transition: all .2s ease-in-out;
 
     #downloads-container {
         padding: 0 15px;
+    }
+
+    .top-image {
+        top: 150px;
     }
 
 
