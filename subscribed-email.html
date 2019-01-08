@@ -46,33 +46,6 @@
             font-weight: bold;
         }
 
-        .header {
-            height: 130px;
-            padding: 0 0 0 50px;
-        }
-
-        .brand {
-            display: inline-block;
-        }
-
-        .link {
-            font-size: 12px;
-            color: #7985FF;
-            text-transform: initial;
-            display: inline-block;
-            line-height: 130px;
-            text-align: right;
-            transition: color .2s ease-in-out;
-        }
-
-        .link:hover {
-            color: #5468E6;
-        }
-
-        .half-container {
-            width: 45%;
-        }
-
         .newsletter {
             margin: 0 auto 0 auto;
             max-width: 600px;
@@ -84,15 +57,18 @@
 
         }
 
+        .logo {
+            padding-top: 50px;
+        }
+
         .message {
-            margin: 50px auto 50px auto;
             font-size: 14px;
             font-weight: normal;
             text-align: center;
             color: #424242;
             max-width: 410px;
             line-height: 28px;
-            padding: 0 30px;
+            padding: 50px 30px;
         }
 
         .signature {
@@ -109,13 +85,14 @@
         .source-label {
             display: inline-block;
             /*margin-right: 15px;*/
-            opacity: 0.7;
+            /*opacity: 0.7;*/
             color: #9B9AA9;
         }
 
         .planeeet-logo {
             position: initial;
-            margin: -10px;
+            margin-left: 8px;
+            margin-bottom: -10px;
             width: 97px;
         }
 
@@ -145,21 +122,6 @@
 
         @media only screen and (max-width: 390px) {
 
-            .header {
-                padding: 50px 0;
-                height: 50px;
-            }
-
-            .half-container {
-                width: 100%;
-                text-align: center;
-            }
-
-            .link {
-                line-height: initial;
-                margin-top: 50px;
-            }
-
             #footer-navigation {
                 margin: 0;
                 padding: 25px 0 0 0;
@@ -184,29 +146,14 @@
         <td class="content">
 
             <table class="table-content">
-                <tr>
-                    <td>
-                        <div class="header">
-                            <div class="brand half-container">
-                                <img class="scrumbs-logo " width="160px" src="https://subscribe.scrumbs.app/public/img/scrumbs-logo-colored.png">
-                            </div>
-                            <a href="index.html" class="link half-container">View in Browser</a>
-                        </div>
+                <tr class="logo">
+                    <td class="logo" align="center">
+
+                        <img  width="160px" src="https://subscribe.scrumbs.app/public/img/scrumbs-logo-colored.png">
+
                     </td>
                 </tr>
 
-                <!--<tr class="header">-->
-                    <!--<td class="brand half-container">-->
-
-
-                                <!--<img class="scrumbs-logo " width="160px" src="https://subscribe.scrumbs.app/public/img/scrumbs-logo-colored.png">-->
-
-                    <!--</td>-->
-
-                    <!--<td>-->
-                        <!--<a href="index.html" class="link half-container">View in Browser</a>-->
-                    <!--</td>-->
-                <!--</tr>-->
 
                 <tr>
                     <td class="message">Hello <span class="user-name">{{ name }}</span>,<br><br>Thank you for subscribing to the Scrumbs alpha release. You will be among the first to get notified of our soft launch!
@@ -218,15 +165,6 @@
                     </td>
                 </tr>
 
-                <!--<tr>-->
-                    <!--<td>-->
-                        <!--<div class="source-company">-->
-                            <!--<div class="source-label">Powered by</div>-->
-                            <!--<a  href="http://planeeet.com" target="_blank"><img class="planeeet-logo" src="https://subscribe.scrumbs.app/public/img/planeeet-logo.png"></a>-->
-                        <!--</div>-->
-                    <!--</td>-->
-
-                <!--</tr>-->
 
                 <tr class="source-company">
                     <td class="source-label">
@@ -234,8 +172,8 @@
                         Powered by <a href="http://planeeet.com" target="_blank"><img class="planeeet-logo" src="https://subscribe.scrumbs.app/public/img/planeeet-logo.png"></a>
 
                     </td>
-
                 </tr>
+
 
                 <tr id="footer-navigation">
 
