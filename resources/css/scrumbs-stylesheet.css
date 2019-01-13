@@ -737,17 +737,19 @@ transition: all .2s ease-in-out;
     position: fixed;
     z-index: 2;
     text-align: center;
-    padding-top: 50px;
+    padding: 50px 0;
     box-sizing: border-box;
     background-image: linear-gradient(0deg, #F6F6F9 48%, #FFFFFF 100%);
     display: none;
+    overflow-y: scroll;
+
 }
 
 #close-mobile-menu-btn {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 50px;
+    bottom: 90px;
 }
 
 #mobile-navigation {
@@ -1566,6 +1568,7 @@ transition: all .2s ease-in-out;
     #close-mobile-menu-btn {
         right: 50px;
         left: initial;
+        position: fixed;
     }
 
 }
@@ -1576,7 +1579,15 @@ transition: all .2s ease-in-out;
         right: 25px;
         bottom: 25px;
         left: initial;
+        position: fixed;
     }
+
+}
+
+
+/** Test for IOS */
+
+@supports (-webkit-overflow-scrolling: touch) {
 
 }
 
